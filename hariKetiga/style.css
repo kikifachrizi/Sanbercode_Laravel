@@ -1,0 +1,63 @@
+.navbar {
+    justify-content: space-between;
+}
+.sub-navbar ul {
+    justify-content: space-around;
+}
+.nav .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav .container li a {
+    color: black;
+    font-weight: 600;
+}
+
+.part-satu {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+    "section jumbotron feature"
+    "section item external-links"    
+    ;
+}
+
+.section {
+    grid-area: section;
+    /* height: 300p; */
+    background-color: white;
+    margin-right: 20px;
+}
+.jumbotron {
+    border-radius: 0px;
+    grid-area: jumbotron;
+    height: 100%;
+    background-color: white;
+    padding: 0px;
+    
+}
+.item{
+    grid-area: item;
+    height: 200px;
+    background-color:white;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.feature {
+    grid-area: feature;
+    height: 100%;
+    background-color: white;
+    margin-left: 20px;
+    
+}
+.external-links {
+    grid-area: external-links;
+    height: 200px;
+    background-color: white;
+    align-self: flex-end;
+    margin-left: 20px;
+}
